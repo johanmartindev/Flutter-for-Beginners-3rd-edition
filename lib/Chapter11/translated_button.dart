@@ -6,20 +6,20 @@ class TranslatedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Translated button example")),
+      appBar: AppBar(title: const Text("Translated button example")),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              child: Text("Original button"),
+              child: const Text("Original button"),
               onPressed: () {},
             ),
-            Padding(padding: EdgeInsets.only(bottom: 20)),
+            const Padding(padding: EdgeInsets.only(bottom: 20)),
             Transform.translate(
-              offset: Offset(30, 30),
+              offset: const Offset(30, 30),
               child: ElevatedButton(
-                child: Text("translated button"),
+                child: const Text("translated button"),
                 onPressed: () {},
               ),
             ),

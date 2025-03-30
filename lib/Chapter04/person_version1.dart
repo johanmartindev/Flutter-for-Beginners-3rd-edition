@@ -5,8 +5,8 @@ class Person {
   String get fullName => "$firstName $lastName";
   set fullName(String fullName) {
     var parts = fullName.split(" ");
-    this.firstName = parts.first;
-    this.lastName = parts.last;
+    firstName = parts.first;
+    lastName = parts.last;
   }
 }
 

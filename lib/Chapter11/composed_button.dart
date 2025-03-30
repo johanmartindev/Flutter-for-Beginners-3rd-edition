@@ -7,23 +7,23 @@ class ComposedButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Composed button example")),
+      appBar: AppBar(title: const Text("Composed button example")),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
             ElevatedButton(
-              child: Text("Original button"),
+              child: const Text("Original button"),
               onPressed: () {},
             ),
             Transform.translate(
-              offset: Offset(70, 200),
+              offset: const Offset(70, 200),
               child: Transform.rotate(
                 angle: -45 * (math.pi / 180.0),
                 child: Transform.scale(
                   scale: 2.0,
                   child: ElevatedButton(
-                    child: Text("multiple transformations"),
+                    child: const Text("multiple transformations"),
                     onPressed: () {},
                   ),
                 ),

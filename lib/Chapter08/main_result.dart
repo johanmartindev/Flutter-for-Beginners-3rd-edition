@@ -52,10 +52,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
             ElevatedButton(
-              child: Text('Explore Whitby'),
+              child: const Text('Explore Whitby'),
               onPressed: () async {
                 bool? outcome = await Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
@@ -80,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class DestinationDetails extends StatelessWidget {
-  DestinationDetails({required this.title});
+  const DestinationDetails({super.key, required this.title});
   final String title;
   @override
   Widget build(BuildContext context) {
@@ -91,13 +91,13 @@ class DestinationDetails extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              child: Text('Favorite'),
+              child: const Text('Favorite'),
               onPressed: () {
                 Navigator.of(context).pop(true);
               },
             ),
             ElevatedButton(
-              child: Text("Close"),
+              child: const Text("Close"),
               onPressed: () {
                 Navigator.of(context).pop(false);
               },

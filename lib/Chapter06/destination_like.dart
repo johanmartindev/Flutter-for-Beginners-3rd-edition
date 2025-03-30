@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DestinationLike extends StatefulWidget {
-  DestinationLike({Key? key}) : super(key: key);
+  const DestinationLike({Key? key}) : super(key: key);
 
   @override
   State<DestinationLike> createState() => _DestinationLikeState();

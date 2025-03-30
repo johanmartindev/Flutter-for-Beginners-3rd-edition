@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
 class RotationBounceInAnimations extends StatefulWidget {
-  RotationBounceInAnimations({Key? key}) : super(key: key);
+  const RotationBounceInAnimations({Key? key}) : super(key: key);
 
   @override
   State<RotationBounceInAnimations> createState() => _RotationBounceInAnimationsState();
@@ -23,7 +23,7 @@ class _RotationBounceInAnimationsState extends State<RotationBounceInAnimations>
     var controller = AnimationController(
       vsync: this,
       debugLabel: "animations demo",
-      duration: Duration(seconds: 3),
+      duration: const Duration(seconds: 3),
     );
     var animation = controller.drive(CurveTween(
       curve: Curves.bounceIn,
@@ -45,7 +45,7 @@ class _RotationBounceInAnimationsState extends State<RotationBounceInAnimations>
     return Transform.rotate(
       angle: _angle,
       child: ElevatedButton(
-        child: Text("Rotated button"),
+        child: const Text("Rotated button"),
         onPressed: () {
           if (_controller.status == AnimationStatus.completed) {
             _controller.reset();

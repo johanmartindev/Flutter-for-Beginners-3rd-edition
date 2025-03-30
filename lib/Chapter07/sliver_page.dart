@@ -11,13 +11,13 @@ class SliverPage extends StatelessWidget {
           SliverAppBar(
             expandedHeight: 100.0,
             floating: true,
-            title: Text("Sliver page"),
-            flexibleSpace: FlexibleSpaceBar(
+            title: const Text("Sliver page"),
+            flexibleSpace: const FlexibleSpaceBar(
               title: Text('Flexible part'),
             ),
             actions: [
               IconButton(
-                icon: Icon(Icons.delete),
+                icon: const Icon(Icons.delete),
                 tooltip: 'Example button',
                 onPressed: () {},
               ),
@@ -39,7 +39,7 @@ class SliverPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 TextButton(
-                  child: Text("Next"),
+                  child: const Text("Next"),
                   onPressed: () {},
                 ),
               ],

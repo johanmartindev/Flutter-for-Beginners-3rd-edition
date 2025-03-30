@@ -14,7 +14,7 @@ class _MyAppState extends State<MyApp> {
   String? _selectedDestination;
 
   void _setDestination(String destination) {
-    this.setState(() {
+    setState(() {
       _selectedDestination = destination;
     });
   }
@@ -50,7 +50,7 @@ class _MyAppState extends State<MyApp> {
 }
 
 class MyHomePage extends StatefulWidget {
-  MyHomePage({required this.title, required this.destinationCallback});
+  const MyHomePage({super.key, required this.title, required this.destinationCallback});
   final void Function(String) destinationCallback;
 
   final String title;
@@ -71,13 +71,13 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
-              child: Text('Whitby'),
+              child: const Text('Whitby'),
               onPressed: () {
                 widget.destinationCallback("Whitby");
               },
             ),
             ElevatedButton(
-              child: Text('Scarborough'),
+              child: const Text('Scarborough'),
               onPressed: () async {
                 widget.destinationCallback("Scarborough");
               },
@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class DestinationDetails extends StatelessWidget {
-  DestinationDetails({required this.title});
+  const DestinationDetails({super.key, required this.title});
   final String title;
   @override
   Widget build(BuildContext context) {
@@ -101,13 +101,13 @@ class DestinationDetails extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              child: Text('Favorite'),
+              child: const Text('Favorite'),
               onPressed: () {
                 Navigator.of(context).pop(true);
               },
             ),
             ElevatedButton(
-              child: Text("Close"),
+              child: const Text("Close"),
               onPressed: () {
                 Navigator.of(context).pop(false);
               },

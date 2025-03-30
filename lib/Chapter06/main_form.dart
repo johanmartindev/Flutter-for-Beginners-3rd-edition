@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     final valid = Form.of(subContext).validate();
                     print("valid: $valid");
                   },
-                  child: Text("validate"),
+                  child: const Text("validate"),
                 ),
               ),
             ],
@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class VerificationCodeInput extends StatefulWidget {
-  VerificationCodeInput({required this.borderSide, required this.onChanged, required this.controller});
+  const VerificationCodeInput({super.key, required this.borderSide, required this.onChanged, required this.controller});
   final BorderSide borderSide;
   final Function(String) onChanged;
   final TextEditingController controller;

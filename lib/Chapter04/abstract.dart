@@ -35,6 +35,7 @@ class Student2 implements Person {
 
 abstract interface class Person2 {
   String get fullName;
+  @override
   String toString();
 }
 

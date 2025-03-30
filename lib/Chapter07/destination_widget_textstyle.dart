@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DestinationWidgetTextStyle extends StatefulWidget {
-  DestinationWidgetTextStyle({required this.name, required this.description});
+  const DestinationWidgetTextStyle({super.key, required this.name, required this.description});
 
   final String name;
   final String description;
@@ -23,7 +23,7 @@ class _DestinationWidgetTextStyleState extends State<DestinationWidgetTextStyle>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Destination")),
+      appBar: AppBar(title: const Text("Destination")),
       body: Column(
         children: [
           Row(
@@ -31,7 +31,7 @@ class _DestinationWidgetTextStyleState extends State<DestinationWidgetTextStyle>
               Flexible(
                 child: Text(
                   "asdf asdf asdf asdf asdf asdf asdf adsf asdf asdf sadf asdf asdf ${widget.name}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     backgroundColor: Color.fromRGBO(50, 168, 82, 1),
                     color: Colors.red,
                     fontSize: 14,
@@ -48,7 +48,7 @@ class _DestinationWidgetTextStyleState extends State<DestinationWidgetTextStyle>
           ),
           Text(
             widget.description,
-            style: TextStyle(backgroundColor: Color(0x32a852)),
+            style: const TextStyle(backgroundColor: Color(0x0032a852)),
           ),
           IconButton(
             onPressed: () {
@@ -60,7 +60,7 @@ class _DestinationWidgetTextStyleState extends State<DestinationWidgetTextStyle>
           ),
           Text(_likeCounter.toString()),
           ElevatedButton(
-            child: Text("Back"),
+            child: const Text("Back"),
             onPressed: () {
               Navigator.of(context).pop();
             },

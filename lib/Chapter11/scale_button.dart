@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:math' as math;
 
 class RotationAnimations extends StatefulWidget {
-  RotationAnimations({Key? key}) : super(key: key);
+  const RotationAnimations({Key? key}) : super(key: key);
 
   @override
   State<RotationAnimations> createState() => _RotationAnimationsState();
@@ -23,7 +23,7 @@ class _RotationAnimationsState extends State<RotationAnimations> with SingleTick
     var controller = AnimationController(
       vsync: this,
       debugLabel: "animations demo",
-      duration: Duration(seconds: 3),
+      duration: const Duration(seconds: 3),
     );
     controller.addListener(() {
       setState(() {
@@ -42,7 +42,7 @@ class _RotationAnimationsState extends State<RotationAnimations> with SingleTick
     return Transform.rotate(
       angle: _angle,
       child: ElevatedButton(
-        child: Text("Rotated button"),
+        child: const Text("Rotated button"),
         onPressed: () {
           if (_controller.status == AnimationStatus.completed) {
             _controller.reset();

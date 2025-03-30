@@ -7,8 +7,8 @@ class Person {
 
   set fullName(String fullName) {
     var parts = fullName.split(" ");
-    this.firstName = parts.first;
-    this.lastName = parts.last;
+    firstName = parts.first;
+    lastName = parts.last;
   }
 
   static void printsPerson(Person person) {

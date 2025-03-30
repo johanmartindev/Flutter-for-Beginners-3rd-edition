@@ -29,14 +29,6 @@ void lateVariables() {
   print(newNumber); // Prints 42
 
   int? goals;
-
-  // Invalid print statement due to nullability
-  //print(goals + 2);
-
-  // Corrected by testing for null
-  if (goals != null) {
-    print(goals + 2);
-  }
 }
 
 void lists() {
@@ -75,7 +67,7 @@ void strings() {
   quote string''';
 
   String str1 = 'Here is a ';
-  String str2 = str1 + 'concatenated string';
+  String str2 = '${str1}concatenated string';
   print(str2); // Prints Here is a concatenated string
   print(str2[0]); // Prints the single character 'H'
 
@@ -92,7 +84,7 @@ void strings() {
 }
 
 void finalAndConst() {
-  final String defaultLocation = "Staithes";
+  const String defaultLocation = "Staithes";
   const int defaultStars = 3;
 }
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DestinationWidgetContainer extends StatefulWidget {
-  DestinationWidgetContainer({required this.name, required this.description});
+  const DestinationWidgetContainer({super.key, required this.name, required this.description});
 
   final String name;
   final String description;
@@ -23,11 +23,11 @@ class _DestinationWidgetContainerState extends State<DestinationWidgetContainer>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Destination")),
+      appBar: AppBar(title: const Text("Destination")),
       body: Column(
         children: [
           Container(
-            decoration: ShapeDecoration(
+            decoration: const ShapeDecoration(
               shape: StadiumBorder(
                 side: BorderSide(
                   color: Colors.green,
@@ -41,7 +41,7 @@ class _DestinationWidgetContainerState extends State<DestinationWidgetContainer>
           ),
           Text(
             widget.description,
-            style: TextStyle(backgroundColor: Color(0x32a852)),
+            style: const TextStyle(backgroundColor: Color(0x0032a852)),
           ),
           IconButton(
             onPressed: () {
@@ -53,7 +53,7 @@ class _DestinationWidgetContainerState extends State<DestinationWidgetContainer>
           ),
           Text(_likeCounter.toString()),
           ElevatedButton(
-            child: Text("Back"),
+            child: const Text("Back"),
             onPressed: () {
               Navigator.of(context).pop();
             },

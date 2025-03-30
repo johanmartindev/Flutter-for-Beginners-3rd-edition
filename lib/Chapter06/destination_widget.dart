@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DestinationWidget extends StatefulWidget {
-  DestinationWidget({required this.destinationName});
+  const DestinationWidget({super.key, required this.destinationName});
 
   final String destinationName;
 

@@ -54,14 +54,14 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             IconButton(
               onPressed: () => _scaffoldKey.currentState!.closeDrawer(),
-              icon: Icon(Icons.close),
+              icon: const Icon(Icons.close),
             ),
             TextButton(
-              child: Text("Whitby"),
+              child: const Text("Whitby"),
               onPressed: () {},
             ),
             TextButton(
-              child: Text("Saltburn"),
+              child: const Text("Saltburn"),
               onPressed: () {},
             ),
           ],
@@ -76,10 +76,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
             ElevatedButton(
-              child: Text('TextStyle'),
+              child: const Text('TextStyle'),
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             ElevatedButton(
-              child: Text('Container decoration'),
+              child: const Text('Container decoration'),
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             ElevatedButton(
               onPressed: () => _scaffoldKey.currentState!.openDrawer(),
-              child: Text("Open drawer"),
+              child: const Text("Open drawer"),
             ),
             ElevatedButton(
               onPressed: () {
@@ -119,21 +119,21 @@ class _MyHomePageState extends State<MyHomePage> {
               child: const Text('Show SnackBar'),
             ),
             ElevatedButton(
-              child: Text('List view'),
+              child: const Text('List view'),
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
-                    return DestinationListTile();
+                    return const DestinationListTile();
                   }),
                 );
               },
             ),
             ElevatedButton(
-              child: Text('Sliver page'),
+              child: const Text('Sliver page'),
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
-                    return SliverPage();
+                    return const SliverPage();
                   }),
                 );
               },

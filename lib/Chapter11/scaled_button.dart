@@ -6,20 +6,20 @@ class ScaledButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Scaled button example")),
+      appBar: AppBar(title: const Text("Scaled button example")),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ElevatedButton(
-              child: Text("Original button"),
+              child: const Text("Original button"),
               onPressed: () {},
             ),
-            Padding(padding: EdgeInsets.only(bottom: 20)),
+            const Padding(padding: EdgeInsets.only(bottom: 20)),
             Transform.scale(
               scale: 2.0,
               child: ElevatedButton(
-                child: Text("Scaled button"),
+                child: const Text("Scaled button"),
                 onPressed: () {},
               ),
             ),

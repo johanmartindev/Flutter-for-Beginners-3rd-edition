@@ -6,16 +6,16 @@ class DestinationListTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("List view")),
+      appBar: AppBar(title: const Text("List view")),
       body: ListView(
         children: [
           ListTile(
-            title: Text("Teesside"),
-            subtitle: Text("The home of the Lemon Top ice cream"),
-            leading: Icon(Icons.location_on),
+            title: const Text("Teesside"),
+            subtitle: const Text("The home of the Lemon Top ice cream"),
+            leading: const Icon(Icons.location_on),
             onTap: () {},
             trailing: IconButton(
-              icon: Icon(Icons.thumb_up),
+              icon: const Icon(Icons.thumb_up),
               onPressed: () {},
             ),
           ),

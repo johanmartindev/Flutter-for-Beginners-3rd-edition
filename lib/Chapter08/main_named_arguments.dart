@@ -13,10 +13,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       onGenerateRoute: (settings) {
         if (settings.name == '/') {
-          return MaterialPageRoute(builder: (context) => MyHomePage(title: "Flutter Demo Home Page"));
+          return MaterialPageRoute(builder: (context) => const MyHomePage(title: "Flutter Demo Home Page"));
         } else if (settings.name == '/destination') {
           return MaterialPageRoute(builder: (context) => DestinationDetails(title: settings.arguments as String));
         }
+        return null;
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -58,10 +59,10 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
             ElevatedButton(
-              child: Text('Press this'),
+              child: const Text('Press this'),
               onPressed: () {
                 Navigator.of(context).pushNamed('/destination', arguments: "Staithes");
               },
@@ -79,7 +80,7 @@ class _MyHomePageState extends State<MyHomePage> {
 }
 
 class DestinationDetails extends StatelessWidget {
-  DestinationDetails({required this.title});
+  const DestinationDetails({super.key, required this.title});
   final String title;
   @override
   Widget build(BuildContext context) {
@@ -87,7 +88,7 @@ class DestinationDetails extends StatelessWidget {
       appBar: AppBar(title: Text(title)),
       body: Center(
         child: ElevatedButton(
-          child: Text("Back"),
+          child: const Text("Back"),
           onPressed: () {
             Navigator.of(context).pop();
           },

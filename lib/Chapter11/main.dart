@@ -47,47 +47,47 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             ElevatedButton(
-              child: Text('Rotated button'),
+              child: const Text('Rotated button'),
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
-                    return RotatedButton();
+                    return const RotatedButton();
                   }),
                 );
               },
             ),
             ElevatedButton(
-              child: Text('Scaled button'),
+              child: const Text('Scaled button'),
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
-                    return ScaledButton();
+                    return const ScaledButton();
                   }),
                 );
               },
             ),
             ElevatedButton(
-              child: Text('Translated button'),
+              child: const Text('Translated button'),
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
-                    return TranslatedButton();
+                    return const TranslatedButton();
                   }),
                 );
               },
             ),
             ElevatedButton(
-              child: Text('Composed button'),
+              child: const Text('Composed button'),
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
-                    return ComposedButton();
+                    return const ComposedButton();
                   }),
                 );
               },
             ),
             ElevatedButton(
-              child: Text('Animation button'),
+              child: const Text('Animation button'),
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
@@ -97,7 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             ElevatedButton(
-              child: Text('Animation bounce-in button'),
+              child: const Text('Animation bounce-in button'),
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
@@ -107,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),
             ElevatedButton(
-              child: Text('Animation builder'),
+              child: const Text('Animation builder'),
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {

@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     final valid = Form.of(subContext).validate();
                     print("valid: $valid");
                   },
-                  child: Text("validate"),
+                  child: const Text("validate"),
                 ),
               ),
             ],
