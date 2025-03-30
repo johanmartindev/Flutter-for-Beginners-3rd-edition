@@ -83,7 +83,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
-                    return DestinationWidgetTextStyle(
+                    return const DestinationWidgetTextStyle(
                       name: "Whitby",
                       description: "Whitby is a town in the North East of England where Dracula first arrived, taking the form of a dog.",
                     );
@@ -96,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
-                    return DestinationWidgetContainer(
+                    return const DestinationWidgetContainer(
                       name: "Saltburn",
                       description: "Saltburn-by-the-Sea, normally referred to as Saltburn, is the North East's best known location for surfing.",
                     );

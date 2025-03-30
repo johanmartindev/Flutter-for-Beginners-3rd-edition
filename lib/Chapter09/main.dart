@@ -108,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () {
                 Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
-                    return DestinationDetails(title: "Whitby");
+                    return const DestinationDetails(title: "Whitby");
                   }),
                 );
               },
@@ -135,7 +135,7 @@ class DestinationDetails extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          DestinationDescriptionWidget(
+          const DestinationDescriptionWidget(
             description: "Whitby is a town in the North East of England where Dracula first arrived, taking the form of a dog.",
           ),
           ElevatedButton(

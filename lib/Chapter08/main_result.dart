@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () async {
                 bool? outcome = await Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) {
-                    return DestinationDetails(title: "Whitby");
+                    return const DestinationDetails(title: "Whitby");
                   }),
                 );
                 ScaffoldMessenger.of(context).showSnackBar(

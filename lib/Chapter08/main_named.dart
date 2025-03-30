@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       routes: {
         '/': (context) => const MyHomePage(title: 'Flutter Demo Home Page'),
-        '/destination': (context) => DestinationDetails(title: "Whitby"),
+        '/destination': (context) => const DestinationDetails(title: "Whitby"),
       },
       theme: ThemeData(
         primarySwatch: Colors.blue,

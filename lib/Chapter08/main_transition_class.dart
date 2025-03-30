@@ -59,7 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
               onPressed: () async {
                 Navigator.of(context).push(
                   MySlideTransition(
-                    transitionPage: DestinationDetails(title: "Whitby"),
+                    transitionPage: const DestinationDetails(title: "Whitby"),
                   ),
                 );
               },

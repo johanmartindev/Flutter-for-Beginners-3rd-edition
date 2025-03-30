@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: const Text('Explore Whitby'),
               onPressed: () async {
                 Navigator.of(context).push(PageRouteBuilder(
-                  pageBuilder: (context, animation, secondaryAnimation) => DestinationDetails(title: "Whitby"),
+                  pageBuilder: (context, animation, secondaryAnimation) => const DestinationDetails(title: "Whitby"),
                   transitionsBuilder: (context, animation, secondaryAnimation, child) {
                     return SlideTransition(
                       position: Tween<Offset>(
